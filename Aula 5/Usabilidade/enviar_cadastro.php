@@ -6,8 +6,7 @@ $pdo1 = new PDO('mysql:host=localhost;dbname=fpb', 'root', '');
 $pdo2 = new PDO('pgsql:host=alunosfpb.postgresql.dbaas.com.br;dbname=alunosfpb;port=5432', 'alunosfpb', 'Alunos@2023');
 
 // Executar uma consulta no banco de dados SQL Server de origem
-$conexao = mysqli_connect('localhost', 'root', '', 'fpb');
-$result = $conexao->query("SELECT * FROM cadastro");
+$result = $pdo1->query("SELECT * FROM cadastro");
 
 // Loop pelos resultados e inserir no banco de dados PostgreSQL de destino
 foreach ($result as $row) {
