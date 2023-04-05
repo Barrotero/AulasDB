@@ -31,7 +31,6 @@ $dado = mysqli_fetch_row($query);
 		<a href="pesquisar_cnpj.php">Pesquisar CNPJ</a><br>
 		<a href="gerar_json.php">Gerar arquivo Json do Cadastro</a><br>
 		<a href="enviar_cadastro.php">Enviar Cadastro</a><br>
-		<a href="checar_usuario.php">Checar Usuario</a><br>
 		<a href="cadastro.json" target="_blank">Exibir Arquivo Json Gerado</a><br>
 		<a href="sair.php">Sair</a>
 			</nav>
